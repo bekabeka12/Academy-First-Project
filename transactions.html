@@ -8,15 +8,240 @@
     <link rel="stylesheet" href="transactions.css">
 </head>
 <body>
-    <div class="transaction-content">
-        <main class="transactions">
-            <div class="transaction-header">
-                <span></span>
+    <div class="dashboard-content">
+        <aside class="left-sidebar hide-sidebar-tablet hide-mobile">
+            <div class="logo">
+                <img src="icons/logo.webp" alt="" class="logo-img">
             </div>
-            <div>
-                kjbdsa
+            <div class="navigation">
+                <div class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <img src="icons/home.png" alt="" class="nav-icon">
+                        <span>dashboard</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="" class="nav-link">
+                        <img src="/icons/credit-card.png" alt="" class="nav-icon">
+                        <span>Cards And Account</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="" class="nav-link">
+                        <img src="/icons/piggy-bank.png" alt="" class="nav-icon">
+                        <span>Deposits</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="" class="nav-link">
+                        <img src="/icons/creditor.png" alt="" class="nav-icon">
+                        <span>Loans</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="" class="nav-link">
+                        <img src="/icons/transfer.png" alt="" class="nav-icon">
+                        <span>Transfers</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="nav-link">
+                        <img src="/icons/transactions.png" alt="" class="nav-icon">
+                        <span>Transactions</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="" class="nav-link">
+                        <img src="/icons/settings.png" alt="" class="nav-icon">
+                        <span>Settings</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="" class="nav-link">
+                        <img src="/icons/services.png" alt="" class="nav-icon">
+                        <span>Support</span>
+                    </a>
+                </div>
+            </div>
+            <div class="logout">
+                <a href="" class="nav-link">
+                    <img src="/icons/logout.png" alt="" class="nav-icon">
+                    <span>Log Out</span>
+                </a>
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+            <div class="header">
+                <span class="page-title hide-mobile">Transactions</span>
+                <div class="profile">
+                    <img src="/icons/notification.png" alt="" class="main-icon hide-mobile">
+                    <div class="profile-info">
+                        <img src="/icons/user.png" alt="" class="main-icon">
+                        <span>Beka Sherazadishvili</span>
+                    </div>
+                    <img src="icons/down-arrow.png" alt="" class="main-icon">
+                </div>
+            </div>
+            <div class="transaction-content">
+                <main class="transactions">
+                    <div class="transaction-header">
+                        <span class="page-title show-on-mobile">Transactions</span>
+                        <input type="text" class="search-field hide-mobile" placeholder="Search...">
+                        <button class="filter-button hide-mobile">Filter</button>
+                    </div>
+                    <div class="transactions-list">
+                        <div class="transaction-box">
+                            <div class="categories">
+                                <span>Status</span>
+                                <span class="hide-mobile">Date</span>
+                                <span>Transaction name</span>
+                                <span class="hide-mobile">Category</span>
+                                <span>Amount</span>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/lock.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">12-07-2025</span>
+                                            <span>Amazon Purchase</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/carts.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-sidebar-tablet">Shopping</span>  
+                                            </div>
+                                            <span>-11.34 USD</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/Pending.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">11-07-2025</span>
+                                            <span>Zara Store</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/carts.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-sidebar-tablet">Shopping</span>  
+                                            </div>
+                                            <span>-125.42 USD</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/Pending.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">08-07-2025</span>
+                                            <span>Starbucks Coffee</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/restaurant.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-sidebar-tablet">Restaurant</span>  
+                                            </div>
+                                            <span>-43.67 USD</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/success.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">07-07-2025</span>
+                                            <span>ATM Withdrawal</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/bank.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-sidebar-tablet">Bank</span>  
+                                            </div>
+                                            <span>-1.23 USD</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/success.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">07-07-2025</span>
+                                            <span>Monthly Subscriptions</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/more-information.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-sidebar-tablet">Other expenses</span>  
+                                            </div>
+                                            <span>-11.34 USD</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/cancel.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">07-07-2025</span>
+                                            <span>CSV Pharmacy</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/medical-cross.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-sidebar-tablet">Pharmacy</span>  
+                                            </div>
+                                            <span>-125.42 USD</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/success.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">06-07-2025</span>
+                                            <span>Company Payroll</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/money.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-sidebar-tablet">Salary</span>  
+                                            </div>
+                                            <span>1 500 USD</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/success.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">06-07-2025</span>
+                                            <span>Airbnb Booking</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/plane.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-sidebar-tablet">Travel</span>  
+                                            </div>
+                                            <span>-1 242 USD</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/cancel.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">05-07-2025</span>
+                                            <span>ebay Order</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/carts.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-sidebar-tablet">Shopping</span>  
+                                            </div>
+                                            <span>-11.34 USD</span>
+                                        </div>
+                                    </li>
+                                    <!-- <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/success.png" alt="" class="main-icon">
+                                            <span class="hide-mobile hide-mobile">05-07-2025</span>
+                                            <span>Domino's Pizza</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/restaurant.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-tablet-and-mobile">Restaurant</span>  
+                                            </div>
+                                            <span>-125.42 USD</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="transactions-items">
+                                            <img src="icons/cancel.png" alt="" class="main-icon">
+                                            <span class="hide-mobile">05-07-2025</span>
+                                            <span>Apple Store</span>
+                                            <div class="overview-info hide-mobile">
+                                                <img src="icons/carts.png" alt="" class="main-icon">                                                                           
+                                                <span class="hide-tablet-and-mobile">Shopping</span>  
+                                            </div>
+                                            <span>-125.42 USD</span>
+                                        </div>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
         </main>
     </div>
+
 </body>
 </html>

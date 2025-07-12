@@ -7,6 +7,7 @@ html, body{
     height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     letter-spacing: 0.2px;
+    font-size: 14px;
 }
 
 .dashboard-content{
@@ -286,3 +287,162 @@ ul {
     padding-bottom: 15px;
 }
 
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 14px;
+  }
+
+  .dashboard-content{
+        width: 900px;
+    }
+
+    .expense-list ul{
+        gap: 8px;
+    }
+
+    .chart{
+        width: 120px;
+        height: 120px;
+    }
+
+    .inner-cart{
+        width: 80px;
+        height: 80px;
+    }
+
+    .hide-tablet-and-mobile{
+        display: none;
+    }
+
+    .card-items {
+        gap: 5px;
+    }
+
+    .expenses{
+        display: grid;
+        align-items: center;
+        place-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .balance{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 12px;
+    }
+
+    .dashboard-content {
+        width: 700px;
+        grid-template-columns: 1fr;
+    }
+
+    .hide-tablet {
+        display: none;
+    }
+
+    .expenses{
+        display: grid;
+        align-items: center;
+        place-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .expense-list ul{
+        gap: 3px;
+    }
+
+    .balance{
+        font-size: 16px;
+    }
+
+    .overview-item{
+        padding: 15px;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 767px){
+    body {
+        font-size: 10px;
+    }
+
+    .dashboard-content{
+        overflow-y: auto;
+        width: 400px;
+        min-height: 90vh;
+        grid-template-columns: 1fr;
+    }
+
+    .page-title{
+        font-size: 14px;
+        letter-spacing: 0.1px;
+    }
+
+    .header{
+        padding: 15px 45px 15px 50px;
+    }
+
+    .profile{
+        display: flex;
+        gap: 170px;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+    .overview-list-mobile{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stats{
+        width: 25px;
+        height: 25px;
+    }
+
+    .balance{
+        font-size: 14px;
+    }
+
+    .chart{
+        width: 120px;
+        height: 120px;
+    }
+
+    .inner-cart{
+        width: 80px;
+        height: 80px;
+    }
+
+    .overview-list{
+        display: grid;
+        justify-content: center;
+        gap: 15px;
+        padding-left: 0;
+    }
+
+    .overview-list:not(.overview-widgets .overview-list) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        height: 100%;
+    }
+
+    .expense-list ul{
+        gap: 3px;
+    }
+
+    .expenses{
+        display: grid;
+        justify-content: center;
+    }
+}
